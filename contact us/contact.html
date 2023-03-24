@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style_blog.css">
+
+    <link rel="stylesheet" href="./style_contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container_navbar">
+            <img src="logo_company.svg" alt="">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a  href="#">Blog</a>
+                </li>
+                <li>
+                    <a class="active" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wallpaper">
+            <h1>contact us</h1>
+        </div>
+
+        
+    </header>
+
+    <section class="contact">
+        <div class="contact_containter">
+            <div class="grid_contact" >
+                <h1>You can find us at</h1>
+                <div class="contact_info">
+                    <h4>email</h4>
+                    <p>explorerinternational@gmail.com</p>
+                </div>
+                <div class="contact_info">
+                    <h4>phone number</h4>
+                    <p>012-345-6789</p>
+                </div>
+                <div class="contact_info">
+                    <h4>location</h4>
+                    <p>50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+                </div>
+
+                <div class="icon">
+                    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+            </div>
+    
+            <div class="grid_contact">
+                <h1>Let's get in touch</h1>
+
+                <div id="contact-form">
+                    <form action="/submit-form" method="POST" onsubmit="submitForm(event)">
+                      <input type="text" id="name" name="name" placeholder="Your Name" required>
+                      <input type="email" id="email" name="email" placeholder="Your Email" required>
+                      <textarea id="message" name="message" placeholder="Message" required></textarea>
+                      <div id="form-buttons">
+                        <input type="submit" value="Send Message" id="submit-button">
+                        <div id="loader"></div>
+                      </div>
+                    </form>
+                    <div id="success-message" style="display: none;">
+                      Thanks for contacting us! We will be in touch with you shortly.
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+
+    <div class="footer_container">
+        <div class="row">
+          <div class="column" style="width: 75%;">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved byExplorer International
+            </p>
+          </div>
+
+          <div class="column" style="width: 25%;">
+            <ul class="social_icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function submitForm(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        const form = document.querySelector('form');
+        const loader = document.querySelector('#loader');
+        const submitButton = document.querySelector('#submit-button');
+        const successMessage = document.querySelector('#success-message');
+        
+        loader.style.display = "inline-block"; // Show the loader
+        submitButton.style.display = "none"; // Hide the submit button
+
+        setTimeout(function() {
+            loader.style.display = "none"; // Hide the loader
+            form.style.display = "none"; // Hide the form
+            successMessage.style.display = "block"; // Show the success message
+        }, 2000);
+        }
+    </script>
+
+    
+
+</body>
+</html>

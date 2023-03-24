@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style_blog.css">
+
+    <title>Blog</title>
+</head>
+<body>
+
+    <header>
+        <div class="container_navbar">
+            <img src="logo_company.svg" alt="">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a class="active" href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="subscribe" id="subscribe">
+        <div class="container">
+            <div class="content">
+                <h5>Mastering Spanish: Tips, Tricks, and Resources for Language Learners</h5>
+                <h1>Join our 100,000+ Subscribers List Today!</h1>
+                <form action="/submit-form" method="POST" onsubmit="submitForm(event)">
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                    <input type="submit" value="Submit" id="submit-button">
+                </form>
+
+                <div id="success-message" style="display: none;">
+                    Thanks for contacting us! We will be in touch with you shortly.
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="collaborations">
+        <h3>where we've been featured</h1>
+        <div class="grid_container">
+            <div class="grid_item">
+                <img src="./logo_1.svg" alt="logo 1" style="width:150px">
+            </div>
+            <div class="grid_item">
+                <img src="./logo_2.svg" alt="logo 1" style="width:150px">
+            </div>
+            <div class="grid_item">
+                <img src="./logo_3.svg" alt="logo 1" style="width:150px">
+            </div>
+            <div class="grid_item">
+                <img src="./logo_4.svg" alt="logo 1" style="width:150px">
+            </div>
+        </div>
+    </section>
+
+    <section class="latest_blog">
+        <h3>latest blog posts</h3>
+            <div class="grid_post">
+                <div class="grid_news">
+                    <a href="">
+                        <img src="./post_wallpaper (1).jpg" alt="logo 1" style="width:100%">
+                    </a>
+                    <a href=""><h5>Language</h5></a>
+                    <a href=""><h2>Top 10 Benefits of Learning a Spanish Language</h2></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem nemo fugiat placeat autem vero enim consectetur maxime eaque! Animi cum ipsa nam pariatur aperiam error in voluptatum optio doloribus!</p>
+                </div>
+                <div class="grid_news">
+                    <a href="">
+                        <img src="./post_wallpaper (2).jpg" alt="logo 1" style="width:100%">
+                    </a>
+                    <a href=""><h5>Language</h5></a>
+                    <a href=""><h2>Benefits of Learning a Second Language at an Early Age</h2></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem nemo fugiat placeat autem vero enim consectetur maxime eaque! Animi cum ipsa nam pariatur aperiam error in voluptatum optio doloribus!</p>
+                </div>
+                <div class="grid_news">
+                    <a href="">
+                        <img src="./post_wallpaper (3).jpg" alt="logo 1" style="width:100%">
+                    </a>
+                    <a href=""><h5>Books</h5></a>
+                    <a href=""><h2>Sales Promotions: 8 Types and How to Implement Them</h2></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem nemo fugiat placeat autem vero enim consectetur maxime eaque! Animi cum ipsa nam pariatur aperiam error in voluptatum optio doloribus!</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="bookstore">
+        <h3>best bookstore to visit</h3>
+        <div class="grid_bookstore">
+            <div class="name_bookstore bookstore_1">
+                <p>Bookstore 1</p>
+            </div>
+            <div class="name_bookstore bookstore_2">
+                <p>Bookstore 2</p>
+            </div>
+            <div class="name_bookstore bookstore_3">
+                <p>Bookstore 3</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="subscribe_2">
+        <div class="subs_container">
+            <div class="subs_content">
+                <h5>Mastering Spanish: Tips, Tricks, and Resources for Language Learners</h5>
+                <h1>Join our 100,000+ Subscribers List Today!</h1>
+                <form action="YOUR_EMAIL_MARKETING_SERVICE_PROVIDER_URL" method="post">
+                    <input type="email" id="email" name="email" placeholder="Enter mail address" required>
+                    <input type="submit" value="Subscribe Now" id="submit_2">
+                </form>
+                <img src="./bg_books.svg" alt="bg" class="bg_books">
+            </div>
+        </div>
+    </section>
+
+    <section class="article">
+        <div class="bg_acticle">
+            <p>Are you a book reader bibliophile?</p>
+            <h1>Contact Explorer International to share your article about books or bookstore.</h1>
+            <a href="#subscribe">get in touch</a>
+        </div>
+    </section>
+
+    <section>
+        <img src="./wave.svg" alt="" style="width: 100%; transform: scaleY(-1);">
+    </section>
+    
+    <footer>
+        <div class="site_footer">
+            <div class="row">
+                <div class="column" style="width: 40%;">
+                    <img src="logo_company.svg" alt="" class="logo_footer">
+                    <div class="left_footer">
+                        <p><i class="fa fa-thumb-tack" aria-hidden="true"></i><span>Kuala Lumpur City Centre, 50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia</span></p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i><span>+6012-345 6789</span></p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i><span>Customer Supprt: customersupport@info.com</span></p>
+                    </div>
+                </div>
+
+                <div class="column" style="width: 30%;">
+                    <h4>More About Explorer International</h4>
+                    <ul class="footer_links">
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contest</a></li>
+                        <li><a href="#">Explorer's News</a></li>
+                    </ul>
+                </div>
+
+                <div class="column" style="width: 30%;">
+                    <h4>Blog Explorer International</h4>
+                    <ul class="footer_links">
+                        <li><a href="#">"Lost in Translation: Navigating the World of Language Textbooks"</a></li>
+                        <li><a href="#">"Textbook Talk: Reviews and Recommendations for Language Learners"</a></li>
+                        <li><a href="#">"The Language Classroom Companion: Exploring the Best Textbooks"</a></li>
+                        <li><a href="#">"Language Learning Made Easy: Finding the Right Textbook for You"</a></li>
+                        <li><a href="#">"Beyond the Basics: Advanced Textbooks for Language Mastery"</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_container">
+            <div class="row">
+              <div class="column" style="width: 75%;">
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved byExplorer International
+                </p>
+              </div>
+    
+              <div class="column" style="width: 25%;">
+                <ul class="social_icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
+
+
+    <script>
+        function submitForm(event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+          
+          const emailInput = document.getElementById("email");
+          emailInput.style.display = "none"; // Hide the email input field
+          
+  
+          
+          const submitButton = document.getElementById("submit-button");
+          submitButton.style.display = "none"; // Hide the submit button
+          
+          const successMessage = document.getElementById("success-message");
+          successMessage.style.display = "block"; // Show the success message
+        }
+    </script>
+</body>
+</html>

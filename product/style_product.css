@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_navbar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 30px 0 15px;
+}
+
+.container_navbar img{
+    width: 240px;
+    margin: 0 10px;
+}
+
+.container_navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.container_navbar ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.active{
+    border-bottom: 1.5px solid #DF922F;
+}
+
+.landing_page{
+    margin: 20px 150px;
+    height: 70vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.grid_container > .grid_left{
+    background-color: #E0EDF4;
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 60px;
+}
+
+.grid_container > .grid_right{
+    background-color: #F2F7F9;
+    grid-column: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_left h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+
+.grid_left h2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    padding: 20px 0;
+}
+
+.cta {
+    border: none;
+    background: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+  
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+  
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+  
+.cta:hover svg {
+    transform: translateX(0);
+}
+  
+.cta:active svg {
+    transform: scale(0.9);
+}
+  
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+  
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.grid_right img{
+    width: 75%;
+}
+
+.our_mission {
+    margin: 100px auto;
+    text-align: center;
+}
+  
+.our_mission h1 {
+    font-family: 'Flamenco', cursive;
+    font-size: 50px;
+    margin: 30px 0;
+    text-align: center;
+}
+  
+.our_mission p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+  
+
+.featured_collection{
+    margin: 30px 150px;
+    background-color: #E0EDF4;
+    height: 90vh;
+    border-radius: 15px;
+}
+
+.featured_collection h1{
+    font-family: 'Flamenco', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.column_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(1, 60vh);
+    grid-gap: 15px;
+    align-items: center;
+    margin: 0 30px;
+    grid-template-areas: 
+        "book1 book2 book3 book4"
+        ;
+        
+}
+
+.grid1 {
+    grid-area: book1;
+    height: 300px;
+    background-color: white;
+    position: relative;
+}
+
+.grid2 {
+    grid-area: book2;
+    height: 150px;
+    background-color: white;
+    position: relative;
+}
+
+.grid3 {
+    grid-area: book3;
+    height: 270px;
+    background-color: white; 
+    position: relative;
+}
+
+.grid4 {
+    grid-area: book4;
+    height: 220px;
+    background-color: white; 
+    position: relative;
+}
+
+.column_container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.column_container > div > .price {
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.popular_collection{
+    margin: 100px auto;
+    text-align: center;
+}
+
+.popular_collection h1{
+    font-family: 'Flamenco', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.popular_container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* change rows to auto and 1fr */
+    grid-template-columns: repeat(4, 200px);
+    grid-row-gap: 100px;
+    grid-column-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-item {
+    background-color: #F3F3F3;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+        "image"
+        "price";
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+.grid-item > img {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.grid-item > .price {
+    grid-area: price;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.review h1{
+    font-family: 'Flamenco', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.slideshow-container {
+    position: relative;
+    background: #F3F3F3;
+    margin: 0 150px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+  
+.mySlides img {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.quotes{
+    float: right;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+}
+
+.quotes p{
+    padding: 20px 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-top: 30px;
+    bottom: 40%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 1px solid #bbb;
+}
+
+/* Add a background color to the active dot/circle */
+.dot-active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 12px 12px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+
+
+.site_footer{
+    margin: 60px 160px;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_footer{
+    width: 300px;
+    margin: 0 0 30px;
+}
+
+.left_footer span{
+    padding-left: 10px;
+}
+
+.column{
+    padding: 0 0 0 35px;
+}
+
+.footer_links{
+    list-style:none;
+}
+
+.footer_links a{
+    text-decoration: none;
+    color: #7395AE;
+}
+
+
+
+.footer_container{
+    background-color: #7395AE;
+}
+
+.footer_container .row{
+    margin:0 160px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.social_icons{
+    text-align:right;
+    list-style: none;
+    display: flex;
+}
+
+.social_icons i{
+    margin: 0 10px;
+    color: white;
+}
